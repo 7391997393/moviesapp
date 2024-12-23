@@ -1,31 +1,32 @@
+import React from "react";
 import { MdHomeFilled } from "react-icons/md";
 import { PiTelevisionFill } from "react-icons/pi";
 import { BiSolidMoviePlay } from "react-icons/bi";
 import { IoSearchOutline } from "react-icons/io5";
 
 export const navigation = [
-    {
-        label : "TV Shows",
-        href : 'tv',
-        icon : <PiTelevisionFill/>
-    },
-    {
-        label : "Movies",
-        href : "movie",
-        icon : <BiSolidMoviePlay/>
-    }
-]
+  {
+    label: "TV Shows",
+    href: "tv",
+    icon: React.createElement(PiTelevisionFill),
+  },
+  {
+    label: "Movies",
+    href: "movie",
+    icon: React.createElement(BiSolidMoviePlay),
+  },
+];
 
 export const mobileNavigation = [
-    {
-        label : "Home",
-        href : "/",
-        icon : <MdHomeFilled/>
-    },
-    ...navigation,
-    {
-        label : "search",
-        href : "/search",
-        icon : <IoSearchOutline/>
-    }
-]
+  {
+    label: "Home",
+    href: "/",
+    icon: React.createElement(MdHomeFilled),
+  },
+  ...navigation,
+  {
+    label: "Search",
+    href: "/search",
+    icon: React.createElement(IoSearchOutline),
+  },
+];
